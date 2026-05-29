@@ -3,8 +3,7 @@
 
 ## Video Explainer
 A video walkthrough demonstrating the implementation and configuration of the Local Bird Sightings project is available at:
-https://murdochuniversity-my.sharepoint.com/:v:/g/personal/32619735_student_murdoch_edu_au/IQBHWsxgwHi1R5WQGs5s4WmpAZoGh8VKJdcdlYZRJePH-zg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&email=WaiLeong.Ow%40murdoch.edu.au&e=M4OGY4
-
+Shared via email to Lecturer as this is not a secure site
 
 ## Project Overview
 
