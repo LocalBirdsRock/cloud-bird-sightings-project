@@ -2,8 +2,11 @@
 
 
 ## Video Explainer
-A video walkthrough demonstrating the implementation and configuration of the Local Bird Sightings project is available at:
-Shared via email to Lecturer as this is not a secure site
+A video walkthrough demonstrating the implementation and configuration of the Local Bird Sightings project has been submitted as part of the assessment requirements.
+
+The video link is provided within the submitted project documentation and has been shared directly with the lecturer.
+
+The direct URL has not been published within this public repository to protect personal and assessment-related information.
 
 ## Project Overview
 
