@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Local Bird Sightings</title>
 
@@ -8,10 +7,9 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             background-color: #f4f8f4;
             margin: 20px;
-            line-height: 1.6;
         }
 
         h1 {
@@ -20,7 +18,27 @@
 
         h2 {
             color: #333;
-            margin-top: 30px;
+tj-171@VM-ICT171:/var/www/html$ cat /var/www/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Bird Sightings</title>
+
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f8f4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2e6f3e;
+        }
+
+        h2 {
+            color: #333;
         }
 
         .bird {
@@ -30,73 +48,59 @@
             border-left: 5px solid #2e6f3e;
         }
 
-        table {
-            border-collapse: collapse;
-            background: white;
-            margin-top: 10px;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 12px;
             color: gray;
-            border-top: 1px solid #ccc;
-            padding-top: 15px;
         }
 
-        img {
-            margin: 10px;
-            border: 1px solid #ccc;
-            background: white;
+        .banner {
+            width: 100%;
+            max-width: 1200px;
+            display: block;
+            margin: o auto 20px auto;
+            border-radius; 8px;
         }
+
     </style>
 </head>
-
 <body>
+<header>
+   <img src="images/banner.jpeg" alt="Local Bird Sightings Banner" class="banner">
+</header>
 
-    <h1>Local Bird Sightings</h1>
+      <h1>Local Bird Sightings</h1>
 
-    <p><strong>Student Number:</strong> 32619735</p>
-
+      <p><strong>Student Number:</strong> 32619735</p>
     <p>
         This website shares information about common birds and recent sightings in the local area.
     </p>
 
-    <h2>Project Proposal</h2>
+     <h2>Project Proposal</h2>
 
-    <p>
-        This project is a cloud-hosted web application titled “Local Bird Sightings”, deployed on a Microsoft Azure virtual machine using an Infrastructure as a Service (IaaS) model.
-    </p>
+      <p>
+  This project is a cloud-hosted web application titled “Local Bird Sightings”, deployed on a Microsoft Azure virtual machine using an Infrastructure as a Service (IaaS) model. The purpose of the system is to provide a simple, accessible platform for recording and sharing local bird observations, including species identification, location, date, and descriptive notes. The system is designed as a lightweight static website hosted on an Apache web server running on an Ubuntu Linux virtual machine.
 
-    <p>
-        The purpose of the system is to provide a simple, accessible platform for recording and sharing local bird observations, including species identification, location, date, and descriptive notes.
-    </p>
+  The motivation for this project is to demonstrate practical understanding of cloud infrastructure, server deployment, and basic web development concepts. The application simulates a real-world use case where environmental or community data can be recorded and shared publicly in a structured format. It also provides a foundation for future expansion, such as automated data entry through scripts or integration with external APIs.
 
-    <p>
-        The server environment was deployed using Microsoft Azure, Ubuntu Linux, Apache2 web server software, and Bash scripting technologies.
-    </p>
+  The server is deployed on Microsoft Azure, where a virtual machine is provisioned, configured, and accessed remotely via SSH. Apache2 is installed to serve HTML content stored in the /var/www/html directory. The website is publicly accessible through the virtual machine’s IP address, demonstrating successful network configuration, firewall setup, and HTTP service deployment.
 
-    <p>
-        The website demonstrates practical cloud infrastructure deployment, Linux administration, website hosting, and scripting concepts developed throughout ICT171.
-    </p>
+  This project also incorporates basic system administration skills using Linux command-line tools, including file editing, package installation, and service management. The website's structure uses HTML and CSS to present bird sightings in a readable, organised format.
 
+  Overall, this project demonstrates the deployment of a functional cloud-based server environment that combines infrastructure management, web hosting, and simple data presentation in a practical and educational use case.
+  </p>
+
+    <!-- LATEST SIGHTING -->
     <h2>Recent Sighting</h2>
 
     <div class="bird">
         <h3>Australian Magpie</h3>
-
         <p><strong>Location:</strong> Campus Oval</p>
-
         <p><strong>Date:</strong> 10 April 2026</p>
-
         <p><strong>Notes:</strong> Singing loudly near trees in the morning.</p>
     </div>
 
+    <!-- BIRD DATABASE -->
     <h2>Bird Species</h2>
 
     <ul>
@@ -105,93 +109,81 @@
         <li>Willy Wagtail</li>
     </ul>
 
-    <h2>Bird Sighting Statistics</h2>
 
-    <table>
-        <tr>
-            <th>Location</th>
-            <th>Total Sightings</th>
-        </tr>
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Location</th>
+        <th>Total Sightings</th>
+    </tr>
+    <tr>
+        <td>Campus Oval</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Library Gardens</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Wetlands Reserve</td>
+        <td>1</td>
+    </tr>
+</table>
 
-        <tr>
-            <td>Campus Oval</td>
-            <td>3</td>
-        </tr>
+<h2>Weather Information</h2>
 
-        <tr>
-            <td>Library Gardens</td>
-            <td>2</td>
-        </tr>
+<p>
+    Weather conditions can influence bird activity, visibility, and movement patterns.
+    Current local weather information can be viewed through the Bureau of Meteorology.
+</p>
 
-        <tr>
-            <td>Wetlands Reserve</td>
-            <td>1</td>
-        </tr>
-    </table>
+<p>
+    <a href="https://www.bom.gov.au/" target="_blank">
+        View Bureau of Meteorology Weather Information
+    </a>
+</p>
 
-    <h2>Weather Information</h2>
+<h2>Bird Photo Repository</h2>
 
-    <p>
-        Weather conditions can influence bird activity and visibility.
-        Current weather information can be viewed through the Bureau of Meteorology website.
-    </p>
+<p>
+    This section provides space for bird photographs collected as part of the Local Bird Sightings project.
+</p>
 
-    <p>
-        <a href="https://www.bom.gov.au/" target="_blank">
-            View Bureau of Meteorology Weather Information
-        </a>
-    </p>
+    <img src="images/magpie.jpeg" width="350">
+    <img src="images/lorikeet.jpeg" width="350">
+    <img src="images/wagtail.jpeg" width="350">
 
-    <h2>Bird Photo Repository</h2>
+      <h2>Licence</h2>
+       <p>
+       This project is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence. This means that others are free to share, copy, distribute, and adapt the content of this website for any purpose, including commercial use, provided appropriate credit is given to the original author. This licence has been chosen because it is commonly used for educational and web-based content and supports open access and the reuse of learning materials. It allows the project to remain flexible while ensuring proper attribution to the original work's creator.
+       </p>
 
-    <p>
-        This section provides space for bird photographs collected as part of the Local Bird Sightings project.
-    </p>
-
-    <img src="magpie.svg" width="250">
-    <img src="lorikeet.svg" width="250">
-    <img src="wagtail.svg" width="250">
-
-    <h2>Licence</h2>
-
-    <p>
-        This project is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence.
-    </p>
+       <h2>System Notes</h2>
 
     <p>
-        Others are free to share, distribute, and adapt the material provided appropriate attribution is given to the original creator.
+        Recent sightings are manually updated by editing the server hosted file via SSH.
     </p>
 
-    <h2>System Notes</h2>
+<h2>Recent Sightings (Live Log)</h2>
 
-    <p>
-        Recent sightings are manually updated by editing the server-hosted file via SSH access.
-    </p>
-
-    <h2>Recent Sightings (Live Log)</h2>
-
-    <p>
-        <a href="sightings.txt">Click here to view latest sightings</a>
-    </p>
+<p>
+<a href="sightings.txt">Click here to view latest sightings</a>
+</p>
 
     <footer>
-
-        <p><strong>Student Number:</strong> 32619735</p>
+       <p><strong>Student Number:</strong> 32619735</p>
 
         <p>
-            This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) Licence.
+                This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) Licence.
         </p>
 
         <p>
-            This website was developed as part of ICT171 using Microsoft Azure, Ubuntu Linux, Apache2, Bash scripting, HTML, and CSS technologies.
+                This website was developed by the student as part of ICT171 using lab materials, lecture guidance, and original content created for this assignment.
+
         </p>
 
         <p>
-            Local Bird Sightings Cloud Server Project
-        </p>
-
+        Cloud Server Project Proposal</p>
     </footer>
 
 </body>
-
 </html>
